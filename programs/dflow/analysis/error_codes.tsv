@@ -1,0 +1,31 @@
+15000	SwapCpiFailed	Swap CPI failed
+15001	SlippageLimitExceeded	Slippage limit exceeded
+15002	FeeAccountNotSpecified	Fee account must be specified when platform_fee_bps is nonzero
+15003	InvalidFeeAccountOwner	Invalid fee account owner
+15004	InputAmountIsZero	input_amount must be greater than 0
+15005	OutputTokenAccountMismatch	Swap output token account did not match the order's output_token_account
+15006	OrderNotFillableAfterLastFillableSlot	Order's last_fillable_slot has passed
+15007	FillOrderNotAuthorized	filler is not authorized to fill the order
+15008	MintAccountNotSpecified	Instruction must specify mint account
+15009	ReturnInputTokenAccountMismatch	return_input_token_account did not match the order's return_input_token_account
+15010	ReturnRentToMismatch	return_rent_to did not match the order's return_rent_to
+15011	CloseOrderNotAuthorized	closer is not authorized to close the order
+15012	InvalidReturnInputTokenAccount	Invalid return_input_token_account
+15013	InvalidOutputTokenAccount	Invalid output_token_account
+15014	CouldNotReturnInput	Couldn't return input from vault
+15015	LegInputOverconsumption	Leg consumed more than allowed input amount
+15016	RouteInputUnderconsumption	Route consumed less than minimum allowed amount of input
+15017	LegConsumedOutput	Leg consumed output
+15018	LegConsumedLamports	Leg consumed lamports
+15019	PumpFunAmmCreatedFeeAta	Pump.fun AMM leg created the protocol fee ATA
+15020	SkippedLeg	A leg in the route was skipped
+15021	DestinationTokenAccountDoesNotExist	Destination token account does not exist
+15022	Token2022ProgramNotProvided	Token 2022 Program account not provided
+15023	InvalidLegInputTokenAccount	Invalid leg input token account
+15024	RaydiumLaunchlabCreatedFeeAta	Raydium Launchlab leg created fee ATA
+15025	LegUnderproducedOutput	Leg produced less output than expected
+15026	NoSettlementTokensReceived	No settlement tokens were received during the swap
+15027	InsufficientAccountsForOpenPredictionsOrder	Insufficient accounts provided for OpenPredictionsOrder action
+15028	InvalidTokenAccount	Invalid token account. Must be either spl_token or spl_token_2022 account
+15029	MinimumLegOutputsCountMismatch	Number of minimum leg outputs must match number of swap legs
+15999	InvalidInstructionData	null

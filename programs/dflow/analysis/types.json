@@ -1,0 +1,2150 @@
+[
+  {
+    "name": "Action",
+    "type": {
+      "kind": "enum",
+      "variants": [
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "WhirlpoolsSwapOptions"
+              }
+            }
+          ],
+          "name": "WhirlpoolsSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "ClearpoolsSwapOptions"
+              }
+            }
+          ],
+          "name": "ClearpoolsSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RaydiumAmmSwapOptions"
+              }
+            }
+          ],
+          "name": "RaydiumAmmSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "LifinityV2SwapOptions"
+              }
+            }
+          ],
+          "name": "LifinityV2Swap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "MeteoraDlmmSwapOptions"
+              }
+            }
+          ],
+          "name": "MeteoraDlmmSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RaydiumClmmSwapOptions"
+              }
+            }
+          ],
+          "name": "RaydiumClmmSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RaydiumClmmSwapV2Options"
+              }
+            }
+          ],
+          "name": "RaydiumClmmSwapV2"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "PhoenixSwapOptions"
+              }
+            }
+          ],
+          "name": "PhoenixSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "PumpFunBuyOptions"
+              }
+            }
+          ],
+          "name": "PumpFunBuy"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "PumpFunSellOptions"
+              }
+            }
+          ],
+          "name": "PumpFunSell"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "GammaSwapOptions"
+              }
+            }
+          ],
+          "name": "GammaSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "ObricV2SwapOptions"
+              }
+            }
+          ],
+          "name": "ObricV2Swap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "PumpFunAmmBuyOptions"
+              }
+            }
+          ],
+          "name": "PumpFunAmmBuy"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "PumpFunAmmSellOptions"
+              }
+            }
+          ],
+          "name": "PumpFunAmmSell"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SolFiSwapOptions"
+              }
+            }
+          ],
+          "name": "SolFiSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RubiconSwapOptions"
+              }
+            }
+          ],
+          "name": "RubiconSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "MeteoraDammV1SwapOptions"
+              }
+            }
+          ],
+          "name": "MeteoraDammV1Swap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RaydiumCpSwapOptions"
+              }
+            }
+          ],
+          "name": "RaydiumCpSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "StabbleStableSwapOptions"
+              }
+            }
+          ],
+          "name": "StabbleStableSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "TesseraVSwapOptions"
+              }
+            }
+          ],
+          "name": "TesseraVSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "MeteoraDammV2SwapOptions"
+              }
+            }
+          ],
+          "name": "MeteoraDammV2Swap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RaydiumLaunchlabSwapOptions"
+              }
+            }
+          ],
+          "name": "RaydiumLaunchlabSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "MeteoraDbcSwapOptions"
+              }
+            }
+          ],
+          "name": "MeteoraDbcSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "HumidiFiSwapOptions"
+              }
+            }
+          ],
+          "name": "HumidiFiSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "WhirlpoolsSwapV2Options"
+              }
+            }
+          ],
+          "name": "WhirlpoolsSwapV2"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "MeteoraDlmmSwapV2Options"
+              }
+            }
+          ],
+          "name": "MeteoraDlmmSwapV2"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "ZeroFiSwapOptions"
+              }
+            }
+          ],
+          "name": "ZeroFiSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "AlphaQSwapOptions"
+              }
+            }
+          ],
+          "name": "AlphaQSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "TokenSwapOptions"
+              }
+            }
+          ],
+          "name": "TokenSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SolFiV2SwapOptions"
+              }
+            }
+          ],
+          "name": "SolFiV2Swap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "MozartSwapOptions"
+              }
+            }
+          ],
+          "name": "MozartSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "DFlowDynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "DFlowDynamicRouteV1"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "HeavenSwapOptions"
+              }
+            }
+          ],
+          "name": "HeavenSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "NexusSwapOptions"
+              }
+            }
+          ],
+          "name": "NexusSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SarosDlmmSwapOptions"
+              }
+            }
+          ],
+          "name": "SarosDlmmSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "TransferFeeOptions"
+              }
+            }
+          ],
+          "name": "TransferFee"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "TransferFeeOptions"
+              }
+            }
+          ],
+          "name": "TransferFeeWithMint"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RecordIdOptions"
+              }
+            }
+          ],
+          "name": "RecordId"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RecordId2Options"
+              }
+            }
+          ],
+          "name": "RecordId2"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "ManifestSwapOptions"
+              }
+            }
+          ],
+          "name": "ManifestSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "BisonFiSwapOptions"
+              }
+            }
+          ],
+          "name": "BisonFiSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SanctumInfinitySwapOptions"
+              }
+            }
+          ],
+          "name": "SanctumInfinitySwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SanctumInfinityLiquidityOptions"
+              }
+            }
+          ],
+          "name": "SanctumInfinityLiquidity"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "OpenPredictionsOrderOptions"
+              }
+            }
+          ],
+          "name": "OpenPredictionsOrder"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "ScorchSwapOptions"
+              }
+            }
+          ],
+          "name": "ScorchSwap"
+        },
+        {
+          "name": "IncludeAccount"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "StabbleWeightedSwapOptions"
+              }
+            }
+          ],
+          "name": "StabbleWeightedSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "VertigoSwapOptions"
+              }
+            }
+          ],
+          "name": "VertigoSwap"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SetMinimumLegOutputsOptions"
+              }
+            }
+          ],
+          "name": "SetMinimumLegOutputs"
+        }
+      ]
+    }
+  },
+  {
+    "name": "AlphaQSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "BisonFiSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "ClearpoolsSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "a_to_b",
+          "type": "bool"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "DFlowDynamicRouteV1Options",
+    "type": {
+      "fields": [
+        {
+          "name": "candidate_actions",
+          "type": {
+            "vec": {
+              "defined": {
+                "name": "DynamicRouteV1CandidateAction"
+              }
+            }
+          }
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "DynamicRouteV1CandidateAction",
+    "type": {
+      "kind": "enum",
+      "variants": [
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SolFiDynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "SolFi"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "RubiconDynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "Rubicon"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "TesseraVDynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "TesseraV"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "HumidiFiDynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "HumidiFi"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "SolFiV2DynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "SolFiV2"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "MozartDynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "Mozart"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "ObricV2DynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "ObricV2"
+        },
+        {
+          "fields": [
+            {
+              "defined": {
+                "name": "NexusDynamicRouteV1Options"
+              }
+            }
+          ],
+          "name": "Nexus"
+        }
+      ]
+    }
+  },
+  {
+    "name": "FeeEvent",
+    "type": {
+      "fields": [
+        {
+          "name": "account",
+          "type": "pubkey"
+        },
+        {
+          "name": "mint",
+          "type": "pubkey"
+        },
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "FillOrderParams",
+    "type": {
+      "fields": [
+        {
+          "name": "swap_actions",
+          "type": {
+            "vec": {
+              "defined": {
+                "name": "Action"
+              }
+            }
+          }
+        },
+        {
+          "name": "platform_fee_ubps",
+          "type": "u32"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "GammaSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "endorsed",
+          "type": "bool"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "HeavenSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "HumidiFiDynamicRouteV1Options",
+    "type": {
+      "fields": [
+        {
+          "name": "swap_id",
+          "type": "u64"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "HumidiFiSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "swap_id",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "LifinityV2SwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "ManifestSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "MeteoraDammV1SwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "MeteoraDammV2SwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "MeteoraDbcSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "is_rate_limiter_applied",
+          "type": "bool"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "MeteoraDlmmSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "num_bin_arrays",
+          "type": "u8"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "MeteoraDlmmSwapV2Options",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "num_bin_arrays",
+          "type": "u8"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "MozartDynamicRouteV1Options",
+    "type": {
+      "fields": [],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "MozartSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "NexusDynamicRouteV1Options",
+    "type": {
+      "fields": [],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "NexusSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "ObricV2DynamicRouteV1Options",
+    "type": {
+      "fields": [],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "ObricV2SwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "OpenOrderParams",
+    "type": {
+      "fields": [
+        {
+          "name": "input_amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Quoted output amount after platform fee"
+          ],
+          "name": "quoted_out_amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Maximum amount in lamports that the fee payer will pay to have the order filled or closed"
+          ],
+          "name": "fee_budget",
+          "type": "u64"
+        },
+        {
+          "name": "order_account_id",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Number of slots after the slot in which the order is opened for which the order is fillable.",
+            "If zero, the order is only fillable in the slot in which the open transaction landed."
+          ],
+          "name": "fillable_for_slots",
+          "type": "u32"
+        },
+        {
+          "docs": [
+            "Max allowed slippage in basis points. Along with `quoted_out_amount`, this is used to",
+            "calculate the minimum allowed output amount."
+          ],
+          "name": "slippage_bps",
+          "type": "u16"
+        },
+        {
+          "docs": [
+            "Account that is authorized to close the order"
+          ],
+          "name": "closer",
+          "type": "pubkey"
+        },
+        {
+          "docs": [
+            "Flags for the order"
+          ],
+          "name": "flags",
+          "type": "u8"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "OpenPredictionsOrderOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "nonce",
+          "type": "u64"
+        },
+        {
+          "name": "order_outcome",
+          "type": "u8"
+        },
+        {
+          "docs": [
+            "Quoted output amount for the predictions order"
+          ],
+          "name": "quoted_out_amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Slippage for the predictions order (separate from swap slippage)"
+          ],
+          "name": "slippage_bps",
+          "type": "u16"
+        },
+        {
+          "name": "platform_fee_recipient_vault",
+          "type": "pubkey"
+        },
+        {
+          "name": "platform_fee_scale",
+          "type": "u16"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "OrchestratorFlags",
+    "type": {
+      "fields": [
+        {
+          "name": "flags",
+          "type": "u8"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "Order",
+    "repr": {
+      "kind": "c"
+    },
+    "serialization": "bytemuck",
+    "type": {
+      "fields": [
+        {
+          "docs": [
+            "Account that is authorized to close the order"
+          ],
+          "name": "closer",
+          "type": "pubkey"
+        },
+        {
+          "docs": [
+            "Account to which output from the fill should be sent. If the order specifies that it should",
+            "output native SOL, then this should be the user's wallet, although any account is allowed.",
+            "If the order doesn't specify that it should output native SOL, then this must be an SPL",
+            "token account, and the token account's mint determines the order's output mint."
+          ],
+          "name": "output_token_account",
+          "type": "pubkey"
+        },
+        {
+          "docs": [
+            "Account to which leftover tokens in the order vault should be returned when the order is",
+            "filled or closed. If the input is native SOL, this should be the user's wallet, although any",
+            "account is allowed. If the input is wrapped SOL or an SPL token, this must be an SPL token",
+            "account for the input mint."
+          ],
+          "name": "return_input_token_account",
+          "type": "pubkey"
+        },
+        {
+          "docs": [
+            "Account to which rent for the account should be returned when the account is closed"
+          ],
+          "name": "return_rent_to",
+          "type": "pubkey"
+        },
+        {
+          "docs": [
+            "ID used to produce a unique PDA for the order account"
+          ],
+          "name": "id",
+          "type": "u64"
+        },
+        {
+          "name": "quoted_out_amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Highest slot at which the order can be filled"
+          ],
+          "name": "last_fillable_slot",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Max allowed slippage in basis points. Along with `quoted_out_amount`, this is used to",
+            "calculate the minimum allowed output amount for the order."
+          ],
+          "name": "slippage_bps",
+          "type": "u16"
+        },
+        {
+          "name": "bump",
+          "type": "u8"
+        },
+        {
+          "docs": [
+            "Bump seed for the vault token account associated with the order"
+          ],
+          "name": "vault_bump",
+          "type": "u8"
+        },
+        {
+          "docs": [
+            "Flags for the order"
+          ],
+          "name": "flags",
+          "type": "u8"
+        },
+        {
+          "name": "_padding1",
+          "type": "u8"
+        },
+        {
+          "name": "_padding2",
+          "type": "u8"
+        },
+        {
+          "name": "_padding3",
+          "type": "u8"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "PhoenixSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "side",
+          "type": {
+            "defined": {
+              "name": "Side"
+            }
+          }
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "PumpFunAmmBuyOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "PumpFunAmmSellOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "PumpFunBuyOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "PumpFunSellOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RaydiumAmmSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RaydiumClmmSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "num_remaining_accounts",
+          "type": "u8"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RaydiumClmmSwapV2Options",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "num_remaining_accounts",
+          "type": "u8"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RaydiumCpSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RaydiumLaunchlabSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RecordId2Options",
+    "type": {
+      "fields": [
+        {
+          "name": "id",
+          "type": {
+            "array": [
+              "u8",
+              4
+            ]
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RecordIdOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "id",
+          "type": {
+            "array": [
+              "u8",
+              76
+            ]
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RubiconDynamicRouteV1Options",
+    "type": {
+      "fields": [],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "RubiconSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SanctumInfinityLiquidityOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "lst_value_calc_accs",
+          "type": "u8"
+        },
+        {
+          "name": "lst_index",
+          "type": "u32"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SanctumInfinitySwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "src_lst_value_calc_accs",
+          "type": "u8"
+        },
+        {
+          "name": "dst_lst_value_calc_accs",
+          "type": "u8"
+        },
+        {
+          "name": "src_lst_index",
+          "type": "u32"
+        },
+        {
+          "name": "dst_lst_index",
+          "type": "u32"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SarosDlmmSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "ScorchSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "id",
+          "type": "u128"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SetMinimumLegOutputsOptions",
+    "type": {
+      "fields": [
+        {
+          "docs": [
+            "Minimum allowed output amount for each swap leg"
+          ],
+          "name": "minimum_outputs",
+          "type": {
+            "vec": "u64"
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "Side",
+    "type": {
+      "kind": "enum",
+      "variants": [
+        {
+          "name": "Bid"
+        },
+        {
+          "name": "Ask"
+        }
+      ]
+    }
+  },
+  {
+    "name": "SolFiDynamicRouteV1Options",
+    "type": {
+      "fields": [],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SolFiSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SolFiV2DynamicRouteV1Options",
+    "type": {
+      "fields": [],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SolFiV2SwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "StabbleStableSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "StabbleWeightedSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "Swap2Params",
+    "type": {
+      "fields": [
+        {
+          "name": "actions",
+          "type": {
+            "vec": {
+              "defined": {
+                "name": "Action"
+              }
+            }
+          }
+        },
+        {
+          "docs": [
+            "Quoted output amount for the swap after platform fee"
+          ],
+          "name": "quoted_out_amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Max allowed slippage in basis points. Along with `quoted_out_amount`, this is used to",
+            "calculate the minimum allowed output amount for the swap."
+          ],
+          "name": "slippage_bps",
+          "type": "u16"
+        },
+        {
+          "docs": [
+            "Platform fee in basis points. If nonzero, this percentage of the output amount will be",
+            "transferred to the platform fee account, and the instruction must include the platform fee",
+            "account as the last account. The platform fee account must be a valid token account for the",
+            "output mint, and it must specify the public key of the Referral program's DFlow project as",
+            "its owner."
+          ],
+          "name": "platform_fee_bps",
+          "type": "u16"
+        },
+        {
+          "docs": [
+            "Limit on the positive slippage fee in percent. The positive slippage fee is limited to the",
+            "lesser of (1) the excess actual out amount above the quoted amount and (2) this percentage",
+            "of the actual out amount after platform fee."
+          ],
+          "name": "positive_slippage_fee_limit_pct",
+          "type": "u8"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SwapEvent",
+    "type": {
+      "fields": [
+        {
+          "name": "amm",
+          "type": "pubkey"
+        },
+        {
+          "name": "input_mint",
+          "type": "pubkey"
+        },
+        {
+          "name": "input_amount",
+          "type": "u64"
+        },
+        {
+          "name": "output_mint",
+          "type": "pubkey"
+        },
+        {
+          "name": "output_amount",
+          "type": "u64"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "SwapParams",
+    "type": {
+      "fields": [
+        {
+          "name": "actions",
+          "type": {
+            "vec": {
+              "defined": {
+                "name": "Action"
+              }
+            }
+          }
+        },
+        {
+          "docs": [
+            "Quoted output amount for the swap after platform fee"
+          ],
+          "name": "quoted_out_amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Max allowed slippage in basis points. Along with `quoted_out_amount`, this is used to",
+            "calculate the minimum allowed output amount for the swap."
+          ],
+          "name": "slippage_bps",
+          "type": "u16"
+        },
+        {
+          "docs": [
+            "Platform fee in basis points. If nonzero, this percentage of the output amount will be",
+            "transferred to the platform fee account, and the instruction must include the platform fee",
+            "account as the last account. The platform fee account must be a valid token account for the",
+            "output mint, and it must specify the public key of the Referral program's DFlow project as",
+            "its owner."
+          ],
+          "name": "platform_fee_bps",
+          "type": "u16"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "TesseraVDynamicRouteV1Options",
+    "type": {
+      "fields": [],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "TesseraVSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "TokenSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "TransferFeeOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "VertigoSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "WhirlpoolsSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "a_to_b",
+          "type": "bool"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "WhirlpoolsSwapV2Options",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "name": "a_to_b",
+          "type": "bool"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  },
+  {
+    "name": "ZeroFiSwapOptions",
+    "type": {
+      "fields": [
+        {
+          "name": "amount",
+          "type": "u64"
+        },
+        {
+          "docs": [
+            "Optional flags for the swap"
+          ],
+          "name": "orchestrator_flags",
+          "type": {
+            "defined": {
+              "name": "OrchestratorFlags"
+            }
+          }
+        }
+      ],
+      "kind": "struct"
+    }
+  }
+]

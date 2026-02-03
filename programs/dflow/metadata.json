@@ -1,0 +1,20 @@
+{
+  "program_id": "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
+  "cluster": "mainnet-beta",
+  "downloaded_at": "2026-02-04T00:00:00Z",
+  "file_size": 1768749,
+  "name": "swap_orchestrator",
+  "version": "0.1.0",
+  "framework": "anchor",
+  "description": "DFlow Swap Orchestrator - DEX aggregator with prediction market support",
+  "website": "https://dflow.net",
+  "docs": "https://pond.dflow.net",
+  "github": "https://github.com/DFlowProtocol",
+  "analysis": {
+    "instructions": 17,
+    "accounts": 1,
+    "errors": 27,
+    "types": 66,
+    "venues": 36
+  }
+}

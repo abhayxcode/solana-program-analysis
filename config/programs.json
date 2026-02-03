@@ -1,0 +1,28 @@
+{
+  "programs": [
+    {
+      "name": "dflow",
+      "address": "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
+      "cluster": "mainnet-beta",
+      "type": "anchor",
+      "description": "DFlow Swap Orchestrator - DEX aggregator with prediction market support",
+      "website": "https://dflow.net",
+      "docs": "https://pond.dflow.net",
+      "github": "https://github.com/DFlowProtocol"
+    }
+  ],
+  "known_programs": {
+    "jupiter_v6": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+    "raydium_amm": "675kPX9MHTjS2zt1qfr1NYHuzeLXfQM9H24wFSUt1Mp8",
+    "raydium_clmm": "CAMMCzo5YL8w4VFF8KVHrK22GGUsp5VTaW7grrKgrWqK",
+    "orca_whirlpool": "whirLbMiicVdio4qvUfM5KAg6Ct8VwpYzGff3uctyCc",
+    "meteora_dlmm": "LBUZKhRxPF3XUpBCjp4YzTKgLccjZhTSDM9YuVaPwxo",
+    "phoenix": "PhoeNiXZ8ByJGLkxNfZRnkUfjvmuYqLR89jjFHGqdXY",
+    "openbook_v2": "opnb2LAfJYbRMAHHvqjCwQxanZn7ReEHp1k81EohpZb",
+    "marginfi": "MFv2hWf31Z9kbCa1snEPYctwafyhdvnV7FZnsebVacA",
+    "kamino": "KLend2g3cP87ber41GNPUfcLMMGv4hVNaWjUzh1NHbH",
+    "drift": "dRiftyHA39MWEi3m9aunc5MzRF1JYuBsbn6VPcn33UH",
+    "tensor": "TCMPhJdwDryooaGtiocG1u3xcYbRpiJzb283XfCZsDp",
+    "magic_eden": "M2mx93ekt1fmXSVkTrUL9xVFHkmME8HTUi5Cyc5aF7K"
+  }
+}

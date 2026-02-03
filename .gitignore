@@ -1,0 +1,19 @@
+# Binaries
+*.so
+
+# Large disassembly files (can be regenerated)
+programs/*/disassembly/*.asm
+programs/*/disassembly/*.txt
+
+# macOS
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Temp files
+*.tmp
+*.log

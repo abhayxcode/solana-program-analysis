@@ -1,0 +1,108 @@
+# Solana Program Analysis
+
+A toolkit for downloading, disassembling, and analyzing Solana programs. Designed to be extensible for adding multiple programs.
+
+## Repository Structure
+
+```
+.
+├── programs/                    # Analyzed programs
+│   └── <program-name>/
+│       ├── README.md           # Program-specific documentation
+│       ├── program.so          # Downloaded BPF binary
+│       ├── idl.json            # Anchor IDL (if available)
+│       └── disassembly/
+│           └── program.asm     # Disassembled bytecode
+├── scripts/                     # Automation scripts
+│   ├── analyze.sh              # Full analysis pipeline
+│   ├── download.sh             # Download program binary
+│   ├── disassemble.sh          # Disassemble BPF bytecode
+│   └── fetch_idl.sh            # Fetch Anchor IDL
+├── docs/                        # Documentation
+│   └── analysis-guide.md       # How to analyze programs
+└── config/
+    └── programs.json           # Registry of programs
+```
+
+## Quick Start
+
+### Prerequisites
+
+- [Solana CLI](https://docs.solana.com/cli/install-solana-cli-tools) (v1.14+)
+- [Anchor CLI](https://www.anchor-lang.com/docs/installation) (optional, for IDL fetching)
+- [LLVM](https://llvm.org/) (for disassembly)
+
+```bash
+# macOS
+brew install solana llvm
+
+# Install Anchor (optional)
+cargo install --git https://github.com/coral-xyz/anchor anchor-cli
+```
+
+### Analyze a New Program
+
+```bash
+# Using the full pipeline
+./scripts/analyze.sh <program-id> <program-name>
+
+# Example: Analyze Jupiter Aggregator
+./scripts/analyze.sh JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4 jupiter
+```
+
+### Manual Steps
+
+```bash
+# 1. Download program binary
+./scripts/download.sh <program-id> <program-name>
+
+# 2. Fetch IDL (if Anchor program)
+./scripts/fetch_idl.sh <program-id> <program-name>
+
+# 3. Disassemble
+./scripts/disassemble.sh <program-name>
+```
+
+## Analyzed Programs
+
+| Program | Address | Type | Status |
+|---------|---------|------|--------|
+| [DFlow](./programs/dflow/) | `DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH` | Swap Aggregator | Complete |
+
+## Adding a New Program
+
+1. Add the program to `config/programs.json`:
+   ```json
+   {
+     "name": "my-program",
+     "address": "PROGRAM_ADDRESS_HERE",
+     "cluster": "mainnet-beta",
+     "type": "anchor"
+   }
+   ```
+
+2. Run the analysis:
+   ```bash
+   ./scripts/analyze.sh PROGRAM_ADDRESS my-program
+   ```
+
+3. Create documentation in `programs/my-program/README.md`
+
+## Documentation
+
+- [Analysis Guide](./docs/analysis-guide.md) - Detailed guide on analyzing Solana programs
+- [DFlow Analysis](./programs/dflow/README.md) - Complete analysis of the DFlow swap orchestrator
+
+## Tools Used
+
+| Tool | Purpose |
+|------|---------|
+| `solana program dump` | Download program binary from chain |
+| `anchor idl fetch` | Fetch Anchor IDL from chain |
+| `llvm-objdump` | Disassemble eBPF bytecode |
+| `strings` | Extract readable strings from binary |
+| `jq` | Parse and format JSON |
+
+## License
+
+MIT
