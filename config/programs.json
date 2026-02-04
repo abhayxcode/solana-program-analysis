@@ -9,6 +9,13 @@
       "website": "https://dflow.net",
       "docs": "https://pond.dflow.net",
       "github": "https://github.com/DFlowProtocol"
+    },
+    {
+      "name": "jupiter",
+      "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "cluster": "mainnet-beta",
+      "type": "unknown",
+      "description": "Jupiter Aggregator v6"
     }
   ],
   "known_programs": {
