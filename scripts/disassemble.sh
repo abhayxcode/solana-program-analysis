@@ -42,16 +42,29 @@ fi
 echo "Disassembling $PROGRAM_NAME..."
 echo "Using: $OBJDUMP"
 
+# Solana programs use BPF little-endian architecture
+TARGET_TRIPLE="bpfel"
+
+echo "Using target triple: $TARGET_TRIPLE"
+
 # Full disassembly
 echo "Generating full disassembly..."
-$OBJDUMP -d "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/program.asm" 2>&1
+$OBJDUMP -d --triple=$TARGET_TRIPLE "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/program.asm" 2>&1 || {
+    echo "Warning: Disassembly with $TARGET_TRIPLE failed, trying bpfel..."
+    $OBJDUMP -d --triple=bpfel "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/program.asm" 2>&1 || {
+        echo "Warning: bpfel failed, trying raw disassembly..."
+        $OBJDUMP -d "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/program.asm" 2>&1 || true
+    }
+}
 
 # Extract sections
 echo "Extracting section headers..."
+$OBJDUMP -h --triple=$TARGET_TRIPLE "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/sections.txt" 2>&1 || \
 $OBJDUMP -h "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/sections.txt" 2>&1 || true
 
 # Extract symbols (if not stripped)
 echo "Extracting symbols..."
+$OBJDUMP -t --triple=$TARGET_TRIPLE "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/symbols.txt" 2>&1 || \
 $OBJDUMP -t "$PROGRAM_DIR/program.so" > "$OUTPUT_DIR/symbols.txt" 2>&1 || true
 
 # Extract strings
