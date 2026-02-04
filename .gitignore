@@ -17,3 +17,6 @@ programs/*/disassembly/*.txt
 # Temp files
 *.tmp
 *.log
+
+# Dev Logs
+logs/
