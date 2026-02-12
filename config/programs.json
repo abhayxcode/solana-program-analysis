@@ -26,7 +26,20 @@
       "website": "https://squads.so",
       "github": "https://github.com/squads-protocol/smart-account-program",
       "security_contact": "security@sqds.io",
-      "auditors": ["OtterSec", "Certora"]
+      "auditors": [
+        "OtterSec",
+        "Certora"
+      ]
+    },
+    {
+      "name": "predictions",
+      "address": "pReDicTmksnPfkfiz33ndSdbe2dY43KYPg4U2dbvHvb",
+      "cluster": "mainnet-beta",
+      "type": "native",
+      "description": "DFlow/Kalshi Predictions Program - Tokenized prediction markets with YES/NO outcome tokens",
+      "website": "https://dflow.net",
+      "docs": "https://pond.dflow.net",
+      "github": "https://github.com/DFlowProtocol"
     }
   ],
   "known_programs": {
