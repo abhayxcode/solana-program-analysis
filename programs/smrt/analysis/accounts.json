@@ -1,0 +1,62 @@
+{
+  "program": "squads_smart_account_program",
+  "program_id": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+  "account_count": 8,
+  "accounts": [
+    {
+      "name": "SmartAccount",
+      "seed": "smart_account",
+      "description": "The main multisig smart account holding settings, signers, threshold, and time lock configuration"
+    },
+    {
+      "name": "Proposal",
+      "seed": "proposal",
+      "description": "A voting proposal attached to a transaction, tracks approvals/rejections from signers"
+    },
+    {
+      "name": "Transaction",
+      "seed": "transaction",
+      "description": "A transaction message to be executed by the smart account via CPI"
+    },
+    {
+      "name": "TransactionBuffer",
+      "seed": "transaction_buffer",
+      "description": "Buffer for uploading large transaction messages in chunks (max 4000 bytes)"
+    },
+    {
+      "name": "Batch",
+      "seed": "batch",
+      "description": "Groups multiple transactions under a single proposal for sequential execution"
+    },
+    {
+      "name": "BatchTransaction",
+      "seed": "batch_transaction",
+      "description": "Individual transaction within a batch"
+    },
+    {
+      "name": "SpendingLimit",
+      "seed": "spending_limit",
+      "description": "Pre-approved spending limit allowing transfers without full multisig approval"
+    },
+    {
+      "name": "ProgramConfig",
+      "seed": "program_config",
+      "description": "Global program configuration (authority, treasury, creation fee)"
+    },
+    {
+      "name": "Settings",
+      "seed": "settings",
+      "description": "Smart account settings including signers and permissions"
+    },
+    {
+      "name": "SettingsTransaction",
+      "seed": "settings_transaction",
+      "description": "Transaction that modifies smart account settings when executed"
+    },
+    {
+      "name": "Policy",
+      "seed": "policy",
+      "description": "Policy account defining constraints for program interactions, spending limits, and settings changes"
+    }
+  ]
+}
