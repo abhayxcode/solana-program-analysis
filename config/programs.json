@@ -16,6 +16,17 @@
       "cluster": "mainnet-beta",
       "type": "unknown",
       "description": "Jupiter Aggregator v6"
+    },
+    {
+      "name": "smrt",
+      "address": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+      "cluster": "mainnet-beta",
+      "type": "anchor",
+      "description": "Squads Smart Account Program - Multisig smart account infrastructure",
+      "website": "https://squads.so",
+      "github": "https://github.com/squads-protocol/smart-account-program",
+      "security_contact": "security@sqds.io",
+      "auditors": ["OtterSec", "Certora"]
     }
   ],
   "known_programs": {

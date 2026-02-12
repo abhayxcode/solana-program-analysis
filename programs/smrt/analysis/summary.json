@@ -1,0 +1,37 @@
+{
+  "program": "squads_smart_account_program",
+  "program_id": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+  "name": "Squads Smart Account Program",
+  "website": "https://squads.so",
+  "github": "https://github.com/squads-protocol/smart-account-program",
+  "security_contact": "security@sqds.io",
+  "auditors": ["OtterSec", "Certora"],
+  "framework": "Anchor",
+  "binary_size_bytes": 1641757,
+  "disassembly_lines": 179588,
+  "strings_extracted": 917,
+  "instruction_count": 46,
+  "account_count": 11,
+  "error_count": 100,
+  "source_file_count": 52,
+  "policy_types": [
+    "SpendingLimitPolicy",
+    "ProgramInteraction",
+    "InternalFundTransfer",
+    "SettingsChange"
+  ],
+  "key_features": [
+    "Multisig smart account with configurable threshold",
+    "Proposal-based governance (create, vote, execute)",
+    "Batched transaction execution",
+    "Spending limits with cadence/period controls",
+    "Time lock for proposals (up to 90 days)",
+    "Settings authority for admin operations",
+    "Transaction buffers for large messages (up to 4000 bytes)",
+    "Policy engine (program interaction, fund transfer, settings change)",
+    "Ephemeral signers for PDA-based signing",
+    "Synchronous transaction execution (single-step)",
+    "Rent reclamation for closed accounts",
+    "Up to 65535 signers per smart account"
+  ]
+}

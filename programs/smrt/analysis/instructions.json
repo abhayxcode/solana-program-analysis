@@ -1,0 +1,237 @@
+{
+  "program": "squads_smart_account_program",
+  "program_id": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
+  "instruction_count": 46,
+  "instructions": [
+    {
+      "name": "InitializeProgramConfig",
+      "category": "admin",
+      "description": "Initialize the global program configuration"
+    },
+    {
+      "name": "SetProgramConfigAuthority",
+      "category": "admin",
+      "description": "Set the program config authority"
+    },
+    {
+      "name": "SetProgramConfigSmartAccountCreationFee",
+      "category": "admin",
+      "description": "Set the fee for creating smart accounts"
+    },
+    {
+      "name": "SetProgramConfigTreasury",
+      "category": "admin",
+      "description": "Set the program treasury address"
+    },
+    {
+      "name": "CreateSmartAccount",
+      "category": "smart_account",
+      "description": "Create a new multisig smart account"
+    },
+    {
+      "name": "AddSignerAsAuthority",
+      "category": "authority",
+      "description": "Add a signer to the smart account via settings authority"
+    },
+    {
+      "name": "RemoveSignerAsAuthority",
+      "category": "authority",
+      "description": "Remove a signer from the smart account via settings authority"
+    },
+    {
+      "name": "SetTimeLockAsAuthority",
+      "category": "authority",
+      "description": "Set the time lock duration via settings authority"
+    },
+    {
+      "name": "ChangeThresholdAsAuthority",
+      "category": "authority",
+      "description": "Change the approval threshold via settings authority"
+    },
+    {
+      "name": "SetNewSettingsAuthorityAsAuthority",
+      "category": "authority",
+      "description": "Transfer settings authority to a new address"
+    },
+    {
+      "name": "SetArchivalAuthorityAsAuthority",
+      "category": "authority",
+      "description": "Set the archival authority via settings authority"
+    },
+    {
+      "name": "AddSpendingLimitAsAuthority",
+      "category": "authority",
+      "description": "Add a spending limit via settings authority"
+    },
+    {
+      "name": "RemoveSpendingLimitAsAuthority",
+      "category": "authority",
+      "description": "Remove a spending limit via settings authority"
+    },
+    {
+      "name": "CreateSettingsTransaction",
+      "category": "settings",
+      "description": "Create a transaction to change smart account settings"
+    },
+    {
+      "name": "ExecuteSettingsTransaction",
+      "category": "settings",
+      "description": "Execute an approved settings change transaction"
+    },
+    {
+      "name": "ExecuteSettingsTransactionSync",
+      "category": "settings",
+      "description": "Execute a settings transaction synchronously (single-step)"
+    },
+    {
+      "name": "CreateTransaction",
+      "category": "transaction",
+      "description": "Create a new transaction for the smart account to execute"
+    },
+    {
+      "name": "CreateTransactionBuffer",
+      "category": "transaction",
+      "description": "Create a buffer for large transaction messages"
+    },
+    {
+      "name": "ExtendTransactionBuffer",
+      "category": "transaction",
+      "description": "Append data to an existing transaction buffer"
+    },
+    {
+      "name": "CloseTransactionBuffer",
+      "category": "transaction",
+      "description": "Close a transaction buffer and reclaim rent"
+    },
+    {
+      "name": "CreateTransactionFromBuffer",
+      "category": "transaction",
+      "description": "Create a transaction from a previously filled buffer"
+    },
+    {
+      "name": "ExecuteTransaction",
+      "category": "transaction",
+      "description": "Execute an approved transaction via CPI"
+    },
+    {
+      "name": "ExecuteTransactionSync",
+      "category": "transaction",
+      "description": "Execute a transaction synchronously (deprecated, use v2)"
+    },
+    {
+      "name": "ExecuteTransactionSyncV2",
+      "category": "transaction",
+      "description": "Execute a transaction synchronously (single-step with policy)"
+    },
+    {
+      "name": "CloseTransaction",
+      "category": "transaction",
+      "description": "Close a transaction account and reclaim rent"
+    },
+    {
+      "name": "CloseEmptyPolicyTransaction",
+      "category": "transaction",
+      "description": "Close an empty policy transaction and reclaim rent"
+    },
+    {
+      "name": "CreateBatch",
+      "category": "batch",
+      "description": "Create a batch for grouping multiple transactions"
+    },
+    {
+      "name": "AddTransactionToBatch",
+      "category": "batch",
+      "description": "Add a transaction to an existing batch"
+    },
+    {
+      "name": "ExecuteBatchTransaction",
+      "category": "batch",
+      "description": "Execute a single transaction within a batch"
+    },
+    {
+      "name": "CloseBatchTransaction",
+      "category": "batch",
+      "description": "Close a batch transaction and reclaim rent"
+    },
+    {
+      "name": "CloseBatch",
+      "category": "batch",
+      "description": "Close an entire batch and reclaim rent"
+    },
+    {
+      "name": "CreateProposal",
+      "category": "proposal",
+      "description": "Create a proposal for a pending transaction"
+    },
+    {
+      "name": "ActivateProposal",
+      "category": "proposal",
+      "description": "Activate a draft proposal for voting"
+    },
+    {
+      "name": "ApproveProposal",
+      "category": "proposal",
+      "description": "Cast an approval vote on a proposal"
+    },
+    {
+      "name": "RejectProposal",
+      "category": "proposal",
+      "description": "Cast a rejection vote on a proposal"
+    },
+    {
+      "name": "CancelProposal",
+      "category": "proposal",
+      "description": "Cancel an active proposal"
+    },
+    {
+      "name": "UseSpendingLimit",
+      "category": "spending_limit",
+      "description": "Execute a transfer using a pre-approved spending limit"
+    },
+    {
+      "name": "CloseSettingsTransaction",
+      "category": "cleanup",
+      "description": "Close a settings transaction and reclaim rent"
+    },
+    {
+      "name": "LogEvent",
+      "category": "utility",
+      "description": "Emit a program event log"
+    },
+    {
+      "name": "IdlCreateAccount",
+      "category": "idl",
+      "description": "Create an IDL account (Anchor standard)"
+    },
+    {
+      "name": "IdlResizeAccount",
+      "category": "idl",
+      "description": "Resize an IDL account"
+    },
+    {
+      "name": "IdlCloseAccount",
+      "category": "idl",
+      "description": "Close an IDL account"
+    },
+    {
+      "name": "IdlCreateBuffer",
+      "category": "idl",
+      "description": "Create an IDL buffer for uploading"
+    },
+    {
+      "name": "IdlWrite",
+      "category": "idl",
+      "description": "Write IDL data to buffer"
+    },
+    {
+      "name": "IdlSetAuthority",
+      "category": "idl",
+      "description": "Set IDL account authority"
+    },
+    {
+      "name": "IdlSetBuffer",
+      "category": "idl",
+      "description": "Set the IDL from a buffer"
+    }
+  ]
+}
