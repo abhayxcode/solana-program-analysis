@@ -1,4 +1,4 @@
-# prediction-market Analysis Summary
+# Jupiter Prediction Market Analysis Summary
 
 Generated: 2026-02-21
 

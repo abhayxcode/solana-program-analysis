@@ -1,20 +1,61 @@
-# DFlow Prediction Market CLP
+# Jupiter Prediction Market
 
 **Program ID:** `3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp`
 
-The DFlow Prediction Market CLP (Concurrent Liquidity Program) is the on-chain settlement engine that powers Jupiter's prediction market feature. It manages a JUPUSD-denominated vault, order creation/filling, position tracking, and payout claims for tokenized Kalshi prediction markets on Solana.
+Jupiter's on-chain prediction market program. Bridges both **Kalshi** and **Polymarket** liquidity to Solana. Manages JUPUSD/USDC-denominated vaults, order creation/filling, position tracking, and payout claims. Uses a CLP (Concurrent Liquidity Program) architecture where users post intents on-chain and keepers fill them against off-chain liquidity from either provider.
 
 ## Overview
 
 | Property | Value |
 |----------|-------|
 | **Program ID** | `3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp` |
+| **Label (Solscan)** | Jupiter Prediction Market |
+| **Upgrade Authority** | `HVSZJ2juJnMxd6yCNarTL56YmgUqzfUiwM7y7LtTXKHR` |
 | **Source Path** | `programs/prediction-market/src/lib.rs` |
 | **Framework** | Anchor |
 | **Binary Size** | 685 KB |
 | **Disassembly Lines** | ~68,000 |
 | **Settlement Token** | JUPUSD (`JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD`) |
 | **Outcome Types** | Binary (YES/NO) |
+| **On-Chain IDL** | Not published (Anchor framework confirmed, but IDL account empty) |
+| **Vaults** | 2 (USDC: `BrTCoKzZoh7waCM3h2MuJKan8fX2A574gedorgPRC3HJ`, JUPUSD: `2y9Ad2GD7gwiMkkMu4bBK5216Pv9YJsBkSHAGwN3rBuJ`) |
+
+> **Note:** This program is deployed and owned by Jupiter (upgrade authority `HVSZJ2ju...` differs from DFlow's programs). The architecture follows a CLP pattern similar to DFlow's design, but this is Jupiter's own program.
+
+## Liquidity Sources
+
+This program bridges **two** off-chain prediction market providers. Verified from on-chain position data (42,111 positions analyzed):
+
+| Provider | Position Count | Share | Market ID Format | Example |
+|----------|---------------|-------|-----------------|---------|
+| **Kalshi** | 27,945 | ~66% | Human-readable ticker (`KX` prefix or plain) | `KXBTCMAXY-25-DEC31-149999.99` |
+| **Polymarket** | 14,166 | ~34% | 128-bit hex hash | `0337b0be97e8f76033e945c566593d81` |
+
+**Kalshi** launched first (late 2025), **Polymarket** was added in February 2026.
+
+### Market ID Formats
+
+- **Kalshi markets** use tickers: `KXBTCMAXY-25-DEC31-149999.99`, `KXEPLGAME-25NOV09MCILFC-MCI`, `GTA6-26DEC31`, `FEDHIKE-26DEC31`
+- **Polymarket markets** use 32-char hex hashes (128-bit): `0337b0be97e8f76033e945c566593d81`
+- **Order IDs** in fill logs are 256-bit hashes: `0x9bb1323fb269cdd121aeb605095baf9519179439c943509f30f3e260d3a33e35`
+
+### FillBuyOrder Event Data Structure
+
+Each fill event emits two market identifiers and the order hash:
+```
+market_id:  0337b0be97e8f76033e945c566593d81  (128-bit, stored in position)
+event_id:   031c68cf2f00406c93b161673ec76396  (128-bit, secondary identifier)
+order_hash: 0x9bb1323fb269cdd1...d3a33e35      (256-bit, order reference)
+```
+
+## On-Chain Stats (as of 2026-02-21)
+
+| Metric | Value |
+|--------|-------|
+| Total Accounts | 64,499 |
+| Position Accounts | 42,109 |
+| MarketResult Accounts | 22,388 |
+| Vault Accounts | 2 |
 
 ## How It Works
 
@@ -22,21 +63,22 @@ This program implements an intent-based order system for prediction markets:
 
 1. **Vault Initialization** — Admin sets up a vault with configurable limits (max contracts, fees, settlement delays)
 2. **Order Creation** — Users create buy/sell orders specifying market, side (YES/NO), contracts, and price limit
-3. **Order Filling** — A keeper (DFlow's off-chain relayer) fills orders against Kalshi liquidity
+3. **Order Filling** — A keeper fills orders against off-chain liquidity (Kalshi or Polymarket)
 4. **Position Tracking** — Filled orders create/update position accounts tracking the user's contracts
 5. **Market Settlement** — Admin creates market results when events resolve
 6. **Payout Claims** — Users (or keeper) claim payouts for winning positions after settlement delay
 
 ```
-User (via Jupiter UI)
+User (via Jupiter UI at jup.ag/prediction)
+    ↓ Jupiter v6 swap (token → JUPUSD)
     ↓ CreateOrder
-DFlow Prediction Market CLP (3ZZuTbw...)
+Jupiter Prediction Market (3ZZuTbw...)
     ↓ observed by
-DFlow Keeper (8jhWXEL...)
+Keeper (8jhWXEL...)
     ↓ fills against
-Kalshi (off-chain order book)
+Kalshi / Polymarket (off-chain order books)
     ↓ FillBuyOrder / FillSellOrder
-DFlow Prediction Market CLP → updates position, transfers tokens
+Jupiter Prediction Market → updates position, transfers tokens
 ```
 
 ## Instructions
@@ -85,14 +127,59 @@ DFlow Prediction Market CLP → updates position, transfers tokens
 
 ## State Accounts
 
-Identified from binary source paths and string analysis:
+Identified from binary source paths, on-chain account analysis, and discriminator verification.
 
-| Account | Source | Description |
-|---------|--------|-------------|
-| **Vault** | `src/state/vault.rs` | Holds JUPUSD liquidity, tracks config (fees, limits, toggles) |
-| **Order** | `src/state/order.rs` | Individual buy/sell order with market ID, side, contracts, price limit |
-| **Position** | `src/state/position.rs` | User's position in a market (contracts held, side, entry cost) |
-| **MarketResult** | `src/state/market_result.rs` | Resolved market outcome (which side won) |
+| Account | Discriminator | Size | Count | Source |
+|---------|--------------|------|-------|--------|
+| **Vault** | `0xd308e82b02987577` | 2,000 bytes | 2 | `src/state/vault.rs` |
+| **Position** | `0xaabc8fe47a40f7d0` | 171 bytes | 42,109 | `src/state/position.rs` |
+| **MarketResult** | `0xe474c0ea7d36458e` | 95 bytes | 22,388 | `src/state/market_result.rs` |
+| **Order** | unknown (ephemeral) | ~171 bytes | 0 (closed after fill) | `src/state/order.rs` |
+
+Discriminators verified via `SHA256("account:<Name>")[0..8]` against on-chain data.
+
+### Position Layout (171 bytes) — verified from on-chain data
+
+```
+[0:8]         discriminator (0xaabc8fe47a40f7d0)
+[8:40]        owner: Pubkey (wallet that placed the order)
+[40:44]       market_id_len: u32 (Borsh string length prefix)
+[44:44+len]   market_id: String (Kalshi ticker e.g. "KXBTCMAXY-25-DEC31-149999.99" or Polymarket hex e.g. "0337b0be97e8f76033e945c566593d81")
+[+0]          side: u8 (0=NO, 1=YES)
+[+1]          status: u8
+[+2:+10]      contracts: u64 (e.g. 1000000 = 1 contract in micro units)
+[+10:+18]     created_at: i64 (unix timestamp)
+[+18:...]     additional fields (avg_price, fees, updated_at, padding)
+```
+
+Market IDs use either Kalshi ticker format (`KXBTCMAXY-25-DEC31-149999.99`) or Polymarket hex hashes (`0337b0be97e8f76033e945c566593d81`)
+
+### MarketResult Layout (95 bytes) — verified from on-chain data
+
+```
+[0:8]         discriminator (0xe474c0ea7d36458e)
+[8:12]        market_id_len: u32 (always 32)
+[12:44]       market_id: String (32-char hex hash, e.g. "282042bb11bee156bef4cdd263f3f3ed")
+[44]          status: u8
+[45:53]       settlement_time: i64 (unix timestamp)
+[53]          winning_side: u8 (0=NO, 1=YES)
+[54:62]       resolution_time: i64 (unix timestamp)
+[62]          bump: u8 (PDA bump seed)
+[63:95]       padding (zeroes)
+```
+
+### Vault Layout (2,000 bytes) — partially decoded
+
+```
+[0:8]         discriminator (0xd308e82b02987577)
+[8:40]        settlement_mint: Pubkey (USDC or JUPUSD)
+[40:72]       authority: Pubkey
+[72:2000]     config fields + padding (mostly zeroes)
+```
+
+Known vaults:
+- `BrTCoKzZoh7waCM3h2MuJKan8fX2A574gedorgPRC3HJ` — settlement mint: USDC (`EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v`)
+- `2y9Ad2GD7gwiMkkMu4bBK5216Pv9YJsBkSHAGwN3rBuJ` — settlement mint: JUPUSD (`JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD`)
 
 ### Key Account Fields (from log messages)
 
@@ -251,7 +338,7 @@ There is also a `secondary_authority` referenced in withdraw and some keeper con
 |---------|------|
 | `8jhWXEL7xbfVhmmTUsJVfKn7o74jDy3uPARPA9TjsZd2` | Keeper / Filler |
 | `JuprjznTrTSp2UFa3ZBUFgwdAmtZCq4MQCwysN55USD` | JUPUSD mint (settlement token) |
-| `ProdD7SB4T5h7rwSHU6jJEUtm69rEooTzuguwndpNQc` | DFlow production relayer |
+| `ProdD7SB4T5h7rwSHU6jJEUtm69rEooTzuguwndpNQc` | Production relayer |
 
 **Transaction Pattern (from on-chain tracing):**
 
