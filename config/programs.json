@@ -1,24 +1,44 @@
 {
   "programs": [
     {
-      "name": "dflow",
+      "name": "dflow-swap-orchestrator",
       "address": "DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH",
       "cluster": "mainnet-beta",
       "type": "anchor",
-      "description": "DFlow Swap Orchestrator - DEX aggregator with prediction market support",
+      "description": "DFlow Swap Orchestrator - DEX aggregator routing swaps across 36+ venues with prediction market initialization support",
       "website": "https://dflow.net",
       "docs": "https://pond.dflow.net",
       "github": "https://github.com/DFlowProtocol"
     },
     {
-      "name": "jupiter",
-      "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "name": "dflow-outcome-token-engine",
+      "address": "pReDicTmksnPfkfiz33ndSdbe2dY43KYPg4U2dbvHvb",
       "cluster": "mainnet-beta",
-      "type": "unknown",
-      "description": "Jupiter Aggregator v6"
+      "type": "native",
+      "description": "DFlow/Kalshi Outcome Token Engine - Mints/burns YES/NO SPL outcome tokens, USDC settlement, used by Phantom",
+      "website": "https://dflow.net",
+      "docs": "https://pond.dflow.net",
+      "github": "https://github.com/DFlowProtocol"
     },
     {
-      "name": "smrt",
+      "name": "dflow-prediction-market-clp",
+      "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
+      "cluster": "mainnet-beta",
+      "type": "anchor",
+      "description": "DFlow Prediction Market CLP - Intent-based order book for Jupiter prediction markets, JUPUSD settlement, keeper-filled against Kalshi liquidity",
+      "website": "https://dflow.net",
+      "docs": "https://pond.dflow.net",
+      "github": "https://github.com/DFlowProtocol"
+    },
+    {
+      "name": "jupiter-v6-aggregator",
+      "address": "JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4",
+      "cluster": "mainnet-beta",
+      "type": "hybrid",
+      "description": "Jupiter Aggregator v6 - Solana's largest DEX aggregator routing swaps across 35+ venues"
+    },
+    {
+      "name": "squads-smart-account",
       "address": "SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG",
       "cluster": "mainnet-beta",
       "type": "anchor",
@@ -30,16 +50,6 @@
         "OtterSec",
         "Certora"
       ]
-    },
-    {
-      "name": "predictions",
-      "address": "pReDicTmksnPfkfiz33ndSdbe2dY43KYPg4U2dbvHvb",
-      "cluster": "mainnet-beta",
-      "type": "native",
-      "description": "DFlow/Kalshi Predictions Program - Tokenized prediction markets with YES/NO outcome tokens",
-      "website": "https://dflow.net",
-      "docs": "https://pond.dflow.net",
-      "github": "https://github.com/DFlowProtocol"
     }
   ],
   "known_programs": {
