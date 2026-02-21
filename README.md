@@ -69,7 +69,7 @@ cargo install --git https://github.com/coral-xyz/anchor anchor-cli
 |---------|---------|------|--------|
 | [DFlow Swap Orchestrator](./programs/dflow-swap-orchestrator/) | `DF1ow4tspfHX9JwWJsAb9epbkA8hmpSEAtxXy1V27QBH` | DEX Aggregator (Anchor) | Complete |
 | [DFlow Outcome Token Engine](./programs/dflow-outcome-token-engine/) | `pReDicTmksnPfkfiz33ndSdbe2dY43KYPg4U2dbvHvb` | Prediction Market Engine (Native) | Complete |
-| [DFlow Prediction Market CLP](./programs/dflow-prediction-market-clp/) | `3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp` | Jupiter Prediction Market (Anchor) | Complete |
+| [Jupiter Prediction Market](./programs/jupiter-prediction-market/) | `3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp` | Prediction Market (Anchor) | Complete |
 | [Jupiter v6 Aggregator](./programs/jupiter-v6-aggregator/) | `JUP6LkbZbjS1jKKwapdHNy74zcZ3tLUZoi5QNyVTaV4` | DEX Aggregator (Hybrid) | Complete |
 | [Squads Smart Account](./programs/squads-smart-account/) | `SMRTzfY6DfH5ik3TKiyLFfXexV8uSG3d2UksSCYdunG` | Multisig Smart Account (Anchor) | Complete |
 
@@ -97,7 +97,7 @@ cargo install --git https://github.com/coral-xyz/anchor anchor-cli
 - [Analysis Guide](./docs/analysis-guide.md) - Detailed guide on analyzing Solana programs
 - [DFlow Swap Orchestrator](./programs/dflow-swap-orchestrator/README.md) - DEX aggregator analysis
 - [DFlow Outcome Token Engine](./programs/dflow-outcome-token-engine/README.md) - Prediction market outcome tokens
-- [DFlow Prediction Market CLP](./programs/dflow-prediction-market-clp/README.md) - Jupiter's prediction market program
+- [Jupiter Prediction Market](./programs/jupiter-prediction-market/README.md) - Jupiter's prediction market program
 - [Jupiter v6 Aggregator](./programs/jupiter-v6-aggregator/SUMMARY.md) - Jupiter DEX aggregator
 - [Squads Smart Account](./programs/squads-smart-account/SUMMARY.md) - Squads multisig
 

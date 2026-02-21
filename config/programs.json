@@ -21,14 +21,14 @@
       "github": "https://github.com/DFlowProtocol"
     },
     {
-      "name": "dflow-prediction-market-clp",
+      "name": "jupiter-prediction-market",
       "address": "3ZZuTbwC6aJbvteyVxXUS7gtFYdf7AuXeitx6VyvjvUp",
       "cluster": "mainnet-beta",
       "type": "anchor",
-      "description": "DFlow Prediction Market CLP - Intent-based order book for Jupiter prediction markets, JUPUSD settlement, keeper-filled against Kalshi liquidity",
-      "website": "https://dflow.net",
-      "docs": "https://pond.dflow.net",
-      "github": "https://github.com/DFlowProtocol"
+      "description": "Jupiter Prediction Market - Intent-based prediction market bridging Kalshi and Polymarket to Solana, JUPUSD/USDC settlement",
+      "website": "https://jup.ag/prediction",
+      "docs": "https://dev.jup.ag/api-reference",
+      "upgrade_authority": "HVSZJ2juJnMxd6yCNarTL56YmgUqzfUiwM7y7LtTXKHR"
     },
     {
       "name": "jupiter-v6-aggregator",
